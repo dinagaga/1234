@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTEIT!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        .body {
+            box-sizing: border-box;
+        }
+        .col {
+            color: aliceblue;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        .box-content {
+            flex: 1;
+        }
+        .box-content h2::after {
+            content: '...';
+            color: rgb(0, 0, 0);
+            font-size: 1.2em;
+            margin-left: 190px;
+        }
+        .box-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #666;
+            position: relative;
+        }
+        .box-footer::before {
+            content: '...';
+            position: absolute;
+            top: -20px;
+            left: 0;
+            color: orange;
+            font-size: 1.2em;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: orange;
+            border-radius: 50%;
+        }
+        .date {
+            margin-left: auto;
+        }
+        .name {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .name img {
+            margin-left: 40px;
+            border-radius: 50%;
+            transform: translateY(590px);
+        }
+        .name h3 {
+            margin-left: auto;
+            margin-right: 105px;
+            transform: translateY(580px);
+        }
+        .name p {
+            position: absolute;
+            bottom: 0;
+            text-align: left;
+            padding-left: 95px;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainsidebar">
+        <div class="sidebar">
+            <h1>Note<span class="col">It!</span></h1>
+            <br>
+            <br>
+            <br>
+            <ul class="text2">
+                <li>
+                    <i class="fa-regular fa-note-sticky"><span class="txt">All notes</span></i>
+                </li><br>
+                <li>
+                    <i class="fa-regular fa-heart"><span class="txt">Favorites</span></i>
+                </li><br>
+                <li>
+                    <i class="fa-solid fa-box-archive"><span class="txt">Archives</span></i>
+                </li><br>
+                <li>
+                    <i class="fa-solid fa-power-off"><span class="txt"><a href="signin.htm">Logout</a></span></i>
+                </li>
+            </ul>
+            <div class="name">
+                <img src="images/lee.jpg" alt="" width="50" height="50" />
+                <div>
+                  <p>Hi Rexy!<br />Welcome back.<br /></p>
+                </div>
+        </div>
+         
+             
+        </div>       
+        <div class="mainbox">
+            <div class="main">
+                <h1>All Notes</h1>
+                <div class="inputs">
+                    <input style="text" placeholder="search">
+                    <p>add</p>
+                </div>
+                
+            </div>
+            <br>
+            <div class="note-container">
+                <div class="note">
+                    <div class="note-header"></div>
+                    <div class="note-content"></div>
+                    <div class="note-footer">
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                
+                <div class="boxes">
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Notes 1</h2>
+                            <br>
+                            <p>This is a sample notes printed here.</p>
+                            <p>Testing Notes are printed here....</p>
+                        </div>
+                        <div class="box-footer">
+                            <span class="dot"></span>
+                            <p class="date">March 03, 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Notes 1</h2>
+                            <br>
+                            <p>This is a sample notes printed here.</p>
+                            <p>Testing Notes are printed here....</p>
+                        </div>
+                        <div class="box-footer">
+                            <p class="date">March 03, 2024</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Notes 1</h2>
+                            <br>
+                            <p>This is a sample notes printed here.</p>
+                            <p>Testing Notes are printed here....</p>
+                        </div>
+                        <div class="box-footer">
+                            <p class="date">March 03, 2024</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Notes 2</h2>
+                            <br>
+                            <p>This is a sample notes printed here.</p>
+                            <p>Testing Notes are printed here....</p>
+                        </div>
+                        <div class="box-footer">
+                            <p class="date">March 03, 2024</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Notes 2</h2>
+                            <br>
+                            <p>This is a sample notes printed here.</p>
+                            <p>Testing Notes are printed here....</p>
+                        </div>
+                        <div class="box-footer">
+                            <p class="date">March 03, 2024</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Notes 2</h2>
+                            <br>
+                            <p>This is a sample notes printed here.</p>
+                            <p>Testing Notes are printed here....</p>
+                        </div>
+                        <div class="box-footer">
+                            <span class="dot"></span>
+                            <p class="date">March 03, 2024</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Notes 3</h2>
+                            <br>
+                            <p>This is a sample notes printed here.</p>
+                            <p>Testing Notes are printed here....</p>
+                        </div>
+                        <div class="box-footer">
+                            <p class="date">March 03, 2024</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Notes 3</h2>
+                            <br>
+                            <p>This is a sample notes printed here.</p>
+                            <p>Testing Notes are printed here....</p>
+                        </div>
+                        <div class="box-footer">
+                            <span class="dot"></span>
+                            <p class="date">March 03, 2024</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Notes 3</h2>
+                            <br>
+                            <p>This is a sample notes printed here.</p>
+                            <p>Testing Notes are printed here....</p>
+                        </div>
+                        <div class="box-footer">
+                            <p class="date">March 03, 2024</p>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
